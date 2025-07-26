@@ -10,7 +10,8 @@ const Detail = ({ exerciseDetail }) => {
     const {id, bodyPart, name, target, equipment} = exerciseDetail;
 
     const resolution = "180";
-    const imageUrl = id ? `http://localhost:5000/api/image/${id}?resolution=${resolution}` : '';
+    // const imageUrl = id ? `http://localhost:5000/api/image/${id}?resolution=${resolution}` : '';
+    const imageUrl = id ? `https://my-exercise-fitness-app-backend.onrender.com/api/image/${exerciseId}?resolution=${resolution}` : '';
 
     const extraDetail = [
         {
